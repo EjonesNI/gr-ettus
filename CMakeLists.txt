@@ -144,6 +144,7 @@ endif(NOT UHD_RFNOC_FOUND)
 set(Python_ADDITIONAL_VERSIONS 3.5)
 find_package(PythonLibs 3 REQUIRED)
 
+find_package(Qt4 COMPONENTS QtCore QtGui QtOpenGL)
 if(ENABLE_QT)
     find_package(Qt5 COMPONENTS Core Widgets)
     if(NOT QT_FOUND)
