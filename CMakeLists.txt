@@ -145,7 +145,7 @@ set(Python_ADDITIONAL_VERSIONS 3.5)
 find_package(PythonLibs 3 REQUIRED)
 
 if(ENABLE_QT)
-    find_package(Qt5 5.0.0 COMPONENTS QtCore QtGui QtOpenGL)
+    find_package(Qt5 COMPONENTS Core Widgets)
     if(NOT QT_FOUND)
 	message(FATAL_ERROR "Qt not found.")
     endif(NOT QT_FOUND)
