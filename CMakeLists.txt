@@ -24,7 +24,7 @@ cmake_minimum_required(VERSION 2.6)
 project(gr-ettus CXX C)
 enable_testing()
 set(CMP0071 "NEW")
-
+find_package(Qt4 REQUIRED)
 #select the release build type by default to get optimization flags
 if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE "Release")
