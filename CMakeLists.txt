@@ -34,7 +34,7 @@ set(CMAKE_BUILD_TYPE ${CMAKE_BUILD_TYPE} CACHE STRING "")
 
 #make sure our local CMake Modules path comes first
 list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
-
+${GNURADIO_RUNTIME_INCLUDE_DIRS}/gnuradio/swig
 ########################################################################
 # Compiler specific setup
 ########################################################################
